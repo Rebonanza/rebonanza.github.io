@@ -1,0 +1,125 @@
+*{
+    font-family: "Lato", sans-serif;
+    padding:0;
+    margin:0;
+    color: black;
+    box-sizing: border-box;
+}
+
+.custom-tooltip {
+  --bs-tooltip-margin: 100px;
+}
+
+.bg-dark{
+  background-color: #0F0F0F !important;
+  color: white !important;
+}
+
+.offcanvas{
+  z-index: 1050 !important;
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.navbar .navbar-nav .nav-item .github-link:hover{
+    background-color: rgba(252, 255, 104, 0.822) !important;
+}
+
+.footer-container{
+    position: fixed;
+    bottom:0;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    min-width: 100%;
+    position: fixed;
+}
+
+
+#what-i-do .swiper .swiper-slide{
+    margin: auto 0px;
+    text-align: center;
+}
+
+
+
+#what-i-do .swiper .swiper-slide i{
+    font-size: 2.5rem;
+}
+
+#what-i-do .swiper .swiper-slide i:hover, #what-i-do .swiper .swiper-slide img:hover{
+   cursor: pointer;
+}
+
+@keyframes zoom-in-up {
+    from {
+      opacity: 0;
+      transform: scale3d(0.1, 0.1, 0.1) translateY(100%);
+    }
+    to {
+      opacity: 1;
+      transform: scale3d(1, 1, 1) translateY(0);
+    }
+  }
+  
+  .zoom-in-up {
+    animation: zoom-in-up 2s ease forwards;
+  }
+
+  .flip {
+	-webkit-animation: flip 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: flip 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+ 
+ 
+@-webkit-keyframes flip {
+    0% {
+        -webkit-transform: translateZ(160px) rotateY(180deg);
+        transform: translateZ(160px) rotateY(180deg);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateZ(0) rotateY(0);
+        transform: translateZ(0) rotateY(0);
+        opacity: 1;
+    }
+  }
+  @keyframes flip {
+    0% {
+        -webkit-transform: translateZ(160px) rotateY(180deg);
+        transform: translateZ(160px) rotateY(180deg);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateZ(0) rotateY(0);
+              transform: translateZ(0) rotateY(0);
+        opacity: 1;
+      
+    }
+  }
+  
+  
+  @keyframes fadeUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-up {
+    animation: fadeUp 1s ease-in-out;
+  }
+  
+
